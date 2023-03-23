@@ -124,3 +124,10 @@ $ cmake ..
 $ make -j
 $ sudo make install
 ```
+
+## LibUVC-backend installation
+```
+$ wget https://github.com/IntelRealSense/librealsense/raw/master/scripts/libuvc_installation.sh
+$ chmod +x ./libuvc_installation.sh
+$ ./libuvc_installation.sh
+```
