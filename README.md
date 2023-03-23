@@ -58,6 +58,10 @@ $ pip3 install numba
 https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html
 ```
 
+```
+https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
+```
+
 ## Protobuf Installation
 You may install Protobuf directly from Python using pip:
 ```
