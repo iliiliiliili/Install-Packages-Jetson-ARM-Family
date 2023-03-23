@@ -53,6 +53,11 @@ $ pip3 install llvmlite
 $ pip3 install numba
 ```
 
+## PyTorch
+```
+https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html
+```
+
 ## Protobuf Installation
 You may install Protobuf directly from Python using pip:
 ```
