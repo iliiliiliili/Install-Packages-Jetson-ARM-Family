@@ -140,3 +140,7 @@ $ wget https://github.com/IntelRealSense/librealsense/raw/master/scripts/libuvc_
 $ chmod +x ./libuvc_installation.sh
 $ ./libuvc_installation.sh
 ```
+
+
+## Scikit learn issues
+If when using scikit-learn as a dependency it says that the installation is incorrect, add `import sklearn` as a first import in your entry script.
