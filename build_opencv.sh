@@ -122,7 +122,8 @@ configure () {
         -D WITH_CUDNN=ON
         -D WITH_GSTREAMER=ON
         -D WITH_LIBV4L=ON
-        -D WITH_OPENGL=ON"
+        -D WITH_OPENGL=ON
+        -D PYTHON3_PACKAGES_PATH=/usr/lib/python3/dist-packages"
 
     if [[ "$1" != "test" ]] ; then
         CMAKEFLAGS="
