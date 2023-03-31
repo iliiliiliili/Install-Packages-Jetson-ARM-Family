@@ -1,5 +1,6 @@
 # Install-Packages-Jetson-ARM-Family
-The objective is to give you clear instruction on how to install packages in ARM platform, especially in Jetson family. This instruction was done under Python 3. Tests have been made on Jetson TX2 and Jetson Xavier. You may change ```sudo python3``` and ```sudo pip3``` into ```sudo python2``` and ```sudo pip```, respectively, to make it work under Python 2.
+The objective is to give you clear instruction on how to install packages in ARM platform, especially in Jetson family. This instruction was done under Python 3. Tests have been made on Jetson Nano.
+Use `jtop` to monitor resources.
 
 ## Dependencies Installation
 Before performing any installations, you may need to install the basic dependencies first.
@@ -60,6 +61,23 @@ https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/
 
 ```
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
+```
+
+## OpenCV + GPU
+
+This script is based on the https://github.com/mdegans/nano_build_opencv script with minor changes.
+Download `build_opencv.sh` from this repository.
+
+CUDA_ARCH_BIN is selected as 5.3. See https://developer.nvidia.com/cuda-gpus for arch version for your device.
+
+You may want to uninstall opencv-python first via pip using `pip3 uninstall opencv-python` or `python -m pip uninstall opencv-python`
+
+The comiplation takes a long time and may clog up all your resources. It is better to close every other application and incerase swap file as described [here](https://www.forecr.io/blogs/programming/how-to-increase-swap-space-on-jetson-modules).
+
+```
+sudo apt-get update
+sudo apt-get dist-upgrade -y --autoremove
+bash build_opencv.sh
 ```
 
 ## Protobuf Installation
