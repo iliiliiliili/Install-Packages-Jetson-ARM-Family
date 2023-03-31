@@ -77,7 +77,7 @@ The comiplation takes a long time and may clog up all your resources. It is bett
 ```
 sudo apt-get update
 sudo apt-get dist-upgrade -y --autoremove
-bash build_opencv.sh
+bash build_opencv.sh 4.5.5
 ```
 
 ## Protobuf Installation
